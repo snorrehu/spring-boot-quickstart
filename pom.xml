@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.javabrains.springbootquickstart</groupId>
+    <artifactId>course.api</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!--Set our project to be child of spring boot starter parent, to inherit all default maven configurations.
+    Configures what versions of the jars to download. This preset list (Bill Of Materials) provides all the jars that you need
+    that work well together without issues (Approved by Spring Boot). This means you don't have to worry about individual version numbers
+    but only the version of the parent!!-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.4.2.RELEASE</version>
+    </parent>
+
+    <dependencies>
+
+        <!-- Spring boot starter web is a meta dependency that configures what jars to download.
+        The starter-web dependency embeds a Tomcat Server enabling you to "just run" the project (standalone), i.e the
+         servlet container.-->
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <java.version>10</java.version>
+    </properties>
+
+
+
+</project>
